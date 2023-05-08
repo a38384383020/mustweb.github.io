@@ -166,7 +166,7 @@
                 left: -30px;
             }
             .header nav a{
-                width: 255%;
+                width: 200%;
                 display: block;
                 text-decoration: none;
                 color: rgb(0, 0, 0);
@@ -199,7 +199,7 @@
             float: left; /* 只有第一層是靠左對齊*/
         }
 
-        @media screen and (max-width: 1280px){
+        @media screen and (max-width: 1200px){
             .header nav ul.drop-down-menu{
                 display: block;
             }
@@ -218,25 +218,12 @@
             margin-left: -40px;
         }
 
-        .drop-down-menu3{
-            border-radius:10% 10% 10% 10%;
-        }
-
-        .drop-down-menu5{
-            border-radius:10% 10% 10% 10%;
-        }
-
-        .drop-down-menu6{
+        .drop-down-menu2{
             border-radius:10% 10% 10% 10%;
         }
 
         .header nav ul.drop-down-menu ul li a:hover {
             color: rgb(147, 109, 18) ;
-        }
-
-        .header nav ul.drop-down-menu ul ul {
-            z-index: 999;
-            left: -10px;
         }
 
         .header nav ul.drop-down-menu ul { /*隱藏次選單*/
@@ -248,62 +235,215 @@
             opacity: 0.8;
             display: block;
         }
-        
-        .top{
-            padding: 30px;
-            width: 100%;
-            text-align: center;
-            padding-bottom: 20px;
+        @media screen and (max-width: 1280px){
+            #plus:after{
+                content: "▽";
+                float:right;
+                font-size: 30px;
+            }
+            .header nav ul.drop-down-menu ul {
+                width: 70%;
+                line-height:5px;
+                padding: 10px;
+                background-color: #ffffff;
+                border:  rgb(147, 109, 18) 2px solid;
+                position: fixed;
+                z-index: 99;
+                margin-left: 0px;
+            }
+            .drop-down-menu2{
+                border-radius:30px;
+            }
+            .header nav ul.drop-down-menu ul a{
+                padding: 0;
+                margin: 0px;
+                margin-left: 40px;
+                border-bottom: none;
+            }
+            .header nav ul.drop-down-menu li:hover > ul { 
+                opacity: 1;
+            }
         }
-        .top h1{
-            font-size: 30px;
-            border-bottom: 3px solid #5c7887;
+        @media screen and (max-width: 767px){
+            
+        }
+
+        .banner{
+            width: 100%;
+            background-color: #5c7887;
+        }
+        .banner1 img{
+            width: 100%;
+        }
+        .banner2{
+            width: 90%;
+            padding: 20px 0;
+            margin: 0 auto;
+        }
+        .banner2 h1{
+            text-align: center;
+        }
+        #web{
+            width: 20px;
+            height: 20px;
+        }
+        @media screen and (min-width: 1280px){
+            .banner{
+                padding: 30px;
+                flex-wrap: nowrap;
+                overflow: hidden;
+            }
+            .banner1{
+                width: 30%;
+                float: left;
+                padding: 10px;
+                margin: 10px 0 10px 40px;
+            }
+            .banner2{
+                width: 60%;
+                float: right;
+                margin-top: 20px;
+            }
+        }
+        @media screen and (min-width: 767px){
+
         }
 
         .about{
             width: 100%;
-            background-color: #5c7887;
-            padding: 5px 0px;
+            background-color: #b9b9b9;
+            padding: 20px;
         }
         .about1{
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .ltd{
-            width: 100%;
-            padding-top: 10px;
-            background-color: #ffffff;
-        }
-        .wrap1{
-            display: flex;
             text-align: center;
-            flex-wrap: wrap;
         }
-        .itemltd{
-            width: 175px;
-            height: 225px;
+        .about1 span{
+            font-size: 30px;
+            border-bottom: 3px solid #5c7887;
+        }
+        .about2{
             margin: 0 auto;
-            margin-bottom: 5px;
+            margin-top: 10px;
+            border: 2px solid #000000;
+            border-radius: 15px;
+            padding: 5px;
         }
-        @media screen and (min-width: 1200px){
-            .itemltd{
-                margin: 5px;
+        @media screen and (min-width: 1280px){
+            .wrap1{
+                display: flex;
+                margin: 0 auto;
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+            .about2{
+                width: 40%;
+                margin: 0 auto;
+                margin-top: 10px;
+                padding: 10px;
+            }
+            .about3{
+                width: 50%;
+                float: left;
+                padding-right: 10px;
+            }
+            .about4{
+                width: 50%;
+                float: left;
+                padding-right: 10px;
             }
         }
-        .itemltd img{
-            width: 150px;
-            height: 150px;
+        @media screen and (min-width: 767px){
+
         }
-        .itemltd a{
+
+        
+        .work{
+            width: 100%;
+        }
+        .workk{
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+        .work1{
+            text-align: center;
+        }
+        .work1 span{
+            font-size: 30px;
+            border-bottom: 3px solid #5c7887;
+        }
+        .work2 {
+            text-align: center;
+        }
+        .work2 img{
+            width: 200px;
+            width: 200px;
+            padding: 10px;
+        }
+        .work33{
+            position: relative;
+        }
+        article{
+            border-radius: 15px;
+            background-color: #dfcfbf;
+            padding: 5px;
             color: #000;
-            text-decoration: none;
-            font-size: 10px;
-            margin-left: -30px;
+            max-height: 70px;
+            overflow: hidden;
+            transition: max-height 2s;
+            text-align: justify;
+            margin: 20px 0;
         }
-        .itemltd a:hover{
-            color: rgb(147, 109, 18);
-            text-decoration: underline 1px;
+        article.open{
+            max-height: 700px;
+        }
+        .more{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgb(115, 115, 115);
+            color: #ffffff;
+            border-radius: 15px;
+            font-size: 15px;
+        }
+        @media screen and (min-width: 1280px){
+            .work1{
+                margin-top: 20px;
+            }
+            .workk{
+                display: flex;
+            }
+            .work2 {
+                text-align:left;
+            }
+            .work3{
+                width: 75%;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+            article{
+                padding: 10px;
+                max-height: 80px;
+            }
+            .workk3{
+                display: flex;
+            }
+            .work4{
+                width: 50%;
+                float: left;
+            }
+            .work5{
+                width: 50%;
+                float: left;
+            }
+            .more:hover{
+                cursor: pointer;
+                background-color: #000;
+            }
+        }
+        @media screen and (min-width: 767px){
+
         }
 
         .footer{
@@ -331,7 +471,9 @@
                 font-size: 5px;
             }
         }
+
     </style>
+
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -353,9 +495,9 @@
         <nav class="navbar">
             <ul class="drop-down-menu" style="list-style: none;">
                 <li><a href="Must.html" class="item" id="AAA">首頁</a></li>
-                <li><a href="#" class="item">最新消息</a></li>
-                <li><a href="#" class="item">實習資訊</a>
-                    <ul class="drop-down-menu3" style="list-style: none;">
+                <li><a href="最新消息.html" class="item">最新消息</a></li>
+                <li><a href="#" class="item" id="plus">實習資訊</a>
+                    <ul class="drop-down-menu2" style="list-style: none;">
                         <li><a href="#" class="item">校外實習資訊</a>
                         </li>
                         <li><a href="#" class="item">實習寶典</a>
@@ -365,14 +507,14 @@
                     </ul>
                 </li>
                 <li><a href="Ltd.html" class="item">合作廠商</a></li>
-                <li><a href="#" class="item">實習成就</a>
-                    <ul class="drop-down-menu5" style="list-style: none;">
+                <li><a href="#" class="item" id="plus">實習成就</a>
+                    <ul class="drop-down-menu2" style="list-style: none;">
                         <li><a href="#" class="item">實習心得分享</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#" class="item">上傳資料</a>
-                    <ul class="drop-down-menu6" style="list-style: none;">
+                <li><a href="#" class="item" id="plus">上傳資料</a>
+                    <ul class="drop-down-menu2" style="list-style: none;">
                         <li><a href="#" class="item">實習週記</a>
                         </li>
                         <li><a href="#" class="item">期中報告</a>
@@ -386,132 +528,62 @@
         </nav>
     </div>
 
-    
-    <div class="top">
-        <h1>&emsp;&emsp;合作廠商&emsp;&emsp;</h1>
-    </div>
-
-    <div class="about">
-        <div class="about1">
-            <p style="font-weight:bold;">明新科大資管系，歷年來與新竹科學園區、新竹工業區、湖口工業區、竹北科學園區等高科技廠商進行實習合作，提供優秀之資管實習人才與產學合作機會。合作廠商範圍包含外商、上市櫃公司、本土優質企業，超過30家以上的合作廠商與提供300位以上的實習人才，為台灣資通訊科技產業提供優質人才服務。</p>
-            <p style="font-weight:bold;">明新科大資管系歡迎對資管人才實習有需求之合作單位洽詢，意者請洽賴彥如老師(yenru@must.edu.tw)</p>
+    <div class="banner">
+        <div class="banner1">
+            <img src="img/正儀科技公司.png">
+        </div>
+        <div class="banner2">
+            <h1>正儀科技股份有限公司</h1>
+            <p>地址: 新竹縣竹北市台元街36 號四樓之11</p>
+            <p>公司簡介：
+                正儀科技為ISO/IEC 17025 : 2017 電量領域儀器校正實驗室(編號:2035)，實驗室內校正設備可追溯自國家實驗室。主要提供Agilent、Keithley、Keysight……等半導體相關電子量測儀器校驗、儀器維修、二手儀器及零件買賣服務，並以近似原廠的品質、合理的價格來服務顧客，以期達到雙贏的目的。校驗部分可視儀器型號提供外校、入廠校驗服務，並視客戶需求提供一般校驗(無TAF mark)、含TAF mark校驗報告(正儀認證測點：如直流電壓、交流電壓、直流電流、交流電流、電阻、頻率、電容等)
+            </p>
+            <center>
+                <a href="https://www.jim-e.com/">
+                    <img id="web" src="img/網站小圖.png">
+                </a>
+            </center>
         </div>
     </div>
 
-    <div class="ltd">
+    <div class="about">
+            <div class="about1">
+                <span id="aaaaaa" style="font-family: serif;">&emsp;&emsp;歷年實習&emsp;&emsp;</span>
+            </div>
         <div class="wrap1">
-            <div class="itemltd">
-                <img src ="img/新工研院.png" alt ="">
-                <p></p>
-                <ul class="itemltd1" style="list-style: none;">
-                    <li><a href="Ltd1.html" class="item" id="ltd1" style="font-weight:bold;">工業技術研究院</a></li>
-                </ul>
+            <div class="about2">
+                <h1>單位: 109行政部門</h1>
+                <div class="about3">
+                    <h3>實習工作內容：</h3>
+                    <p>1.製作校正結果報告</br>
+                    2.裝訂校正結果報告書</br>
+                    3.開『工單』(製作報告前)</br>
+                    4.開『完工單』(製作報告後)</br>
+                    5.學/研究excel 巨集VBA</br>
+                    6.修改報告模板格式</br>
+                    7.寄件</br>
+                    8.與客戶溝通安排時間送校</br>
+                    </p>
                 </div>
-                <div class="itemltd">
-                    <img src ="img/新金士頓.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd2.html" class="item" id="ltd1" style="font-weight:bold;">遠東金士頓股份有限公司</a></li>
-                    </ul>
+                <div class="about4">
+                    <h3>須具備能力：</h3>
+                    <p>1.基本excel能力</br>
+                    2.細心、耐心</br>
+                    3.觀察力</br>
+                    </p>
                 </div>
-                <div class="itemltd">
-                    <img src ="img/新智邦.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd3.html" class="item" id="ltd1" style="font-weight:bold;">智邦科技股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/捷創.jpg" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd4.html" class="item" id="ltd1" style="font-weight:bold;">捷創科技股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/new宏達.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd5.html" class="item" id="ltd1" style="font-weight:bold;">宏達服務股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/新欣銓.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd6.html" class="item" id="ltd1" style="font-weight:bold;">欣銓科技股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd" id="itemltdii">
-                    <img src ="img/動力安全.jpg" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd7.html" class="item" id="ltd1" style="font-weight:bold;">動力安全資訊股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/新東元.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd8.html" class="item" id="ltd1" style="font-weight:bold;">東元醫療社團法人東元綜合醫院</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/昇佳.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd9.html" class="item" id="ltd1" style="font-weight:bold;">昇佳電子股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/欣興電子.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd10.html" class="item" id="ltd1" style="font-weight:bold;">欣興電子股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd" id="itemltdii">
-                    <img src ="img/新艾克爾.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd11.html" class="item" id="ltd1" style="font-weight:bold;">艾克爾國際科技股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/仁大資訊.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd12.html" class="item" id="ltd1" style="font-weight:bold;">仁大資訊股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/雍智科技.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd13.html" class="item" id="ltd1" style="font-weight:bold;">雍智科技股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/矽創.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd14.html" class="item" id="ltd1" style="font-weight:bold;">矽創電子股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/新正儀.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="Ltd15.html" class="item" id="ltd1" style="font-weight:bold;">正儀科技股份有限公司</a></li>
-                    </ul>
-                </div>
-                <div class="itemltd">
-                    <img src ="img/新千竣.png" alt ="">
-                    <p></p>
-                    <ul class="itemltd1" style="list-style: none;">
-                        <li><a href="#" class="item" id="ltd1" style="font-weight:bold;">千竣科技有限公司</a></li>
-                    </ul>
-                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work">
+            <div class="work1">
+                <span id="aaaaaa" style="font-family: serif;">&emsp;&emsp;實習職缺&emsp;&emsp;</span>
+            </div>
+        <div class="workk">
+            <div class="work2">
+                <img src="img/正儀.png">
+            </div>
         </div>
     </div>
 
@@ -521,4 +593,6 @@
             <a>明新科技大學訊管理系 版權所有&copy;All Rights Reserved. Designed and Maintained by IM MUST </a>
         </center>
     </div>
+
 </body>
+<script src="javascript"></script>
